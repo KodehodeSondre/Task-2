@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bgimg1 {
+            background-image: url('BG1.jpg');
+        }
+
+        .bgimg2 {
+            background-image: url('BG2.jpg');
+        }
+
+        .bgimg3 {
+            background-image: url('BG3.jpg');
+        }
+
+        .frontboxcontainer {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            text-align: center;
+            background: radial-gradient(ellipse at top, rgb(255, 0, 0), transparent),
+            radial-gradient(ellipse at bottom, rgb(189, 0, 0), transparent), radial-gradient(ellipse at left, red, transparent),radial-gradient(ellipse at top right, red, transparent), radial-gradient(ellipse at right, rgb(249, 0, 0), transparent),radial-gradient(ellipse at bottom right, red, transparent), radial-gradient(ellipse at top left, rgb(174, 10, 10), transparent), radial-gradient(ellipse at bottom left, red, transparent);
+            
+        }
+
+        .content {
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+
+        .content2 {
+            position: absolute;
+            top: 50%;
+            left: 35vw;
+            right: 35vw;
+            font-size: 100%;
+            text-align: center;
+            width: auto;
+            background-color: rgba(255, 0, 0, 0.863);
+            padding: 20px;
+            z-index: 10;
+            
+        }
+        .content2 h1 {
+            margin: 0;
+            font-size: 2rem;
+            text-shadow: 0px 0px 2px rgb(0, 0, 0);
+            color: yellow;
+        }
+
+        .content3 {
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content3 h1 {
+            margin: 0;
+            font-size: 5rem;
+            text-shadow: 0px 0px 5px rgb(255, 0, 0);
+            color: yellow;
+        }
+
+
+        .content h1 {
+            margin: 0;
+            font-size: 5rem;
+            text-shadow: 0px 0px 5px rgb(255, 0, 0);
+            color: yellow;
+        }
+
+        .frontboxcontainer p {
+            margin: 0;
+            font-size: 2rem;
+            padding-bottom: 20px;
+            text-shadow: 0px 0px 2px rgb(195, 4, 4);
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parallax bgimg1">
+        <div class="content2">
+            <h1>China</h1>
+        </div>
+    </div>
+
+    <div class="frontboxcontainer">
+        <div class="content">
+            <h1>Explore China</h1>
+        </div>
+        <p>
+            An ancient country with a rich history, deeply entrenched in nature.
+            Unyielding mountains silhouette the rolling hills and valleys where this
+            hardy people make their home.
+        </p>
+    </div>
+
+    <div class="parallax bgimg2"></div>
+    <div class="frontboxcontainer">
+        <div class="content">
+            <h1>Visit Beautiful Landmarks</h1>
+        </div>
+    </div>
+
+    <div class="parallax bgimg3"></div>
+    <div class="frontboxcontainer">
+        <div class="content3">
+            <h1>Get incarcerated because your 社会信用体系 is insufficient!</h1>
+        </div>
+    </div>
+
+</body>
+</html>
